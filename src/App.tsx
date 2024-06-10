@@ -17,7 +17,7 @@ function App() {
         <ContactButton>
           <p>Contact Me</p>
         </ContactButton>
-        <FirstSectionImg src="/assets/images/sec1.png"></FirstSectionImg>
+        
         
       </FirstSection>
 

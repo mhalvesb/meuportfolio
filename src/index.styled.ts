@@ -29,7 +29,33 @@ export const WebDev = styled.h3`
     color: #9687F9;
     margin: 0;
     padding: 0;
-    
+    position: relative;
+    @keyframes typing{
+        0%{
+            width: 100%;
+        }
+        30%{
+            width: 0px;
+        }
+        100%{
+            border-left: none;
+            width: 0px;
+        }
+        
+    }
+
+    &::after{
+        content: "";
+        border-left: 1px solid #fff;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: -1px;
+        animation: typing 3.5s forwards;
+        
+    }
+
     @media(max-width: 1024px){
         font-size: 60px;
     }
@@ -47,6 +73,13 @@ export const FullStack = styled.h3`
     color: #5CE6BB;
     margin: 0;
     padding: 0;
+    position: relative;
+    
+
+   @keyframes animation{
+    
+   }
+
     @media(max-width: 1024px){
         font-size: 60px;
     }
@@ -376,7 +409,7 @@ export const ComplementalSection = styled.section`
             font-size: 30px;
         }
         img{
-            width: 150px;
+            width: 200px;
             display: block;
             margin: auto;
         }
