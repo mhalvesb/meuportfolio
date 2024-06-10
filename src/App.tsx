@@ -84,7 +84,7 @@ function App() {
       </motion.div>
       </SecondSection>
       <ThirdSection ref={thirdRef}>
-        <motion.div 
+        <motion.div style={{textAlign: "center"}}
           variants={{hidden: {opacity: 0, y: 100}, visible: {opacity: 1, y:0}}}
           initial="hidden"
           animate={thirdControlls}
@@ -96,7 +96,7 @@ function App() {
       </ThirdSection>
         
       <FourthSection ref={fourRef}>
-          <motion.div 
+          <motion.div
           variants={{hidden: {opacity: 0, y: 100}, visible: {opacity: 1, y:0}}}
           initial="hidden"
           animate={fourControlls}
