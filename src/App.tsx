@@ -1,10 +1,59 @@
 import './App.css'
+import {useEffect, useRef} from "react";
 
+import {motion, useInView, useAnimation} from "framer-motion";
 
 import {Link } from 'react-router-dom';
 import { ActiveLi, ComplementalSection, ContactButton, FirstSection, FirstSectionImg, FiveSection, Footers, FourthSection, FullStack, GrayLi, MessageInput, MyName, NameAndEmailInputs, OtherSkills, Profession, SecondSection, SixLeft, SixRight, SixSection, SkillsDiv, ThirdSection, TwoSkills, TwoSkillsText, WebDev } from './index.styled'
 
+
+
+
+  
+
+
+
+
 function App() {
+  
+
+    const secondRef = useRef(null);
+    const thirdRef = useRef(null);
+    const fourRef = useRef(null);
+    const fiveRef = useRef(null);
+    const complementalRef = useRef(null);
+
+    const secondSecView: boolean = useInView(secondRef, { once: true });
+    const thirdSecView: boolean = useInView(thirdRef, { once: true });
+    const fourSecView: boolean = useInView(fourRef, { once: true });
+    const fiveSecView: boolean = useInView(fiveRef, { once: true });
+    const complementalView: boolean = useInView(complementalRef, { once: true });
+
+    const secondControlls = useAnimation();
+    const thirdControlls = useAnimation();
+    const fourControlls = useAnimation();
+    const fiveControlls = useAnimation();
+    const complementalControlls = useAnimation();
+
+    useEffect(() =>{
+      if(secondSecView){
+        secondControlls.start("visible");
+      }
+      if(thirdSecView){
+        thirdControlls.start("visible");
+      }
+      if(fourSecView){
+        fourControlls.start("visible");
+      }
+      if(fiveSecView){
+        fiveControlls.start("visible");
+      } 
+      
+      if(complementalView){
+        complementalControlls.start("visible");
+      }
+    }, [secondSecView, thirdSecView, fourSecView, fiveSecView, complementalView]);
+
 
   return (
     <>
@@ -21,23 +70,49 @@ function App() {
         
       </FirstSection>
 
-      <SecondSection>
+      <SecondSection ref={secondRef}>
+        <motion.div style={{textAlign: "center", position: "relative"}} 
+          variants={{hidden: {opacity: 0, y: 100}, visible: {opacity: 1, y:0}}}
+          initial="hidden"
+          animate={secondControlls}
+          transition={{duration: 0.5, delay: 0.25}}>
+
+        
         <h3>Responsive Ecommerce Page</h3>
       <img src="/assets/images/LapTopEcommerce.png"/>
       <span/>
+      </motion.div>
       </SecondSection>
-      <ThirdSection>
-        <h3>Starbucks Landing Page</h3>
-        <img src="/assets/images/mymonitorstarbucks.png"></img>
+      <ThirdSection ref={thirdRef}>
+        <motion.div 
+          variants={{hidden: {opacity: 0, y: 100}, visible: {opacity: 1, y:0}}}
+          initial="hidden"
+          animate={thirdControlls}
+          transition={{duration: 0.5, delay: 0.25}}>
+          <h3>Starbucks Landing Page</h3>
+          <img src="/assets/images/mymonitorstarbucks.png"></img>
+        </motion.div>
         
       </ThirdSection>
         
-      <FourthSection>
-          <h3>Responsive for Mobile</h3>
+      <FourthSection ref={fourRef}>
+          <motion.div 
+          variants={{hidden: {opacity: 0, y: 100}, visible: {opacity: 1, y:0}}}
+          initial="hidden"
+          animate={fourControlls}
+          transition={{duration: 0.5, delay: 0.25}}>
+            <h3>Responsive for Mobile</h3>
+          </motion.div>
       </FourthSection>
 
 
-        <ComplementalSection>
+        <ComplementalSection ref={complementalRef}>
+          <motion.div 
+          variants={{hidden: {opacity: 0, y: 75}, visible: {opacity: 1, y:0}}}
+          initial="hidden"
+          animate={complementalControlls}
+          transition={{duration: 0.5, delay: 0.25}}
+          >
         <h3>More Projects</h3>
 
 <h6>See more</h6>
@@ -67,9 +142,17 @@ function App() {
               <span></span>
             </Link>
           </div>
-        </ComplementalSection>
-      <FiveSection>
-        <h3>My Skills</h3>
+        </motion.div>
+      </ComplementalSection>
+
+
+      <FiveSection ref={fiveRef}>
+        <motion.div 
+        variants={{hidden: {opacity: 0, y: 75}, visible: {opacity: 1, y:0}}}
+          initial="hidden"
+          animate={fiveControlls}
+          transition={{duration: 0.5, delay: 0.25}}>
+                <h3>My Skills</h3>
 
         <h4>Front-End</h4>
 
@@ -143,7 +226,7 @@ function App() {
           </div>
 
         </SkillsDiv>
-        
+
 
         <TwoSkills>
           
@@ -224,9 +307,10 @@ function App() {
             <span>60%</span>
           </div>
           </OtherSkills>
-        
+
 
         </TwoSkills>
+        </motion.div>
       </FiveSection>
 
       <SixSection>

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const FirstSection = styled.section`
     background-color: #000;
-    height: 100vh;
+    height: 101vh;
     z-index: 1;
     position: relative;
     display: flex;
@@ -76,8 +76,32 @@ export const FullStack = styled.h3`
     position: relative;
     
 
-   @keyframes animation{
+   @keyframes typing{
+    0%{
+            width: 100%;
+            border-left: 1px solid #fff;
+        }
+        30%{
+            width: 0px;
+        }
+        100%{
+            border-left: none;
+            width: 0px;
+   }
+   }
+
+   &::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    right: 0%;
     
+    animation-name: typing;
+    animation-duration: 3.5s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
    }
 
     @media(max-width: 1024px){
@@ -98,8 +122,22 @@ export const Profession = styled.div`
     span{
         color: #fff;
         font-size: 80px;
+        animation-name: myspan;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.8s;
+        opacity: 0;
     }
+    
 
+    @keyframes myspan{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
     @media(max-width: 1024px){
         span{
             font-size: 60px;
@@ -124,7 +162,6 @@ export const MyName = styled.h1`
     color: #fff;
     margin: 0;
     padding: 0;
-
     @media(max-width: 1024px){
         font-size: 92px;
     }
@@ -180,6 +217,7 @@ export const SecondSection = styled.section`
         font-size: 70px;
         margin: 0;
         padding: 0;
+        position: relative;
     }
     span{
         width: 800px;
@@ -195,7 +233,13 @@ export const SecondSection = styled.section`
         z-index: 3;
         position: relative;
         width: 70%;
-        
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     @media (max-width: 1280px){
@@ -213,6 +257,7 @@ export const SecondSection = styled.section`
         display: block;
         border-radius: 9999px;
         position: absolute;
+        
     }
 
     @media(max-width: 1024px){
