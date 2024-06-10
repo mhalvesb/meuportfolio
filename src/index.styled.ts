@@ -394,7 +394,7 @@ export const ComplementalSection = styled.section`
 export const FourthSection = styled.section`
     height: 1200px;
     background-color: #C0C0C0;
-    background: url("./src/assets/images/app.jpg");
+    background: url("/assets/images/app.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -438,7 +438,7 @@ export const FourthSection = styled.section`
 export const FiveSection = styled.section`
     height: auto;
     padding: 0 15%;
-    background: url("./src/assets/images/coding.png");
+    background: url("/assets/images/coding.png");
     background-color: #000;
     background-position: center;
     background-size: cover;
