@@ -17,18 +17,18 @@ function App() {
         <ContactButton>
           <p>Contact Me</p>
         </ContactButton>
-        <FirstSectionImg src="./src/assets/images/sec1.png"></FirstSectionImg>
+        <FirstSectionImg src="./public/assets/images/sec1.png"></FirstSectionImg>
         
       </FirstSection>
 
       <SecondSection>
         <h3>Responsive Ecommerce Page</h3>
-      <img src="./src/assets/images/LapTopEcommerce.png"/>
+      <img src="./public/assets/images/LapTopEcommerce.png"/>
       <span/>
       </SecondSection>
       <ThirdSection>
         <h3>Starbucks Landing Page</h3>
-        <img src="./src/assets/images/mymonitorstarbucks.png"></img>
+        <img src="./public/assets/images/mymonitorstarbucks.png"></img>
         
       </ThirdSection>
         
@@ -45,24 +45,24 @@ function App() {
           <div>
             <Link to="https://www.starbucks.com">
               
-              <img src="./src/assets/images/starbucks.png"></img>
+              <img src="./public/assets/images/starbucks.png"></img>
               <p>Starbucks Landing Page</p>
               <span></span>
             </Link>
             <Link to="/">
             
-              <img src="./src/assets/images/kenosis.png"></img>
+              <img src="./public/assets/images/kenosis.png"></img>
               <p>Civil Construction Page</p>
               <span></span>
             </Link>
             <Link to="/">
 
-              <img src="./src/assets/images/socialMedia1.png"></img>
+              <img src="./publicc/assets/images/socialMedia1.png"></img>
               <p>Functional Social Media</p>
               <span></span>
             </Link>
             <Link to="/">
-              <img src="./src/assets/images/img31.png"></img>
+              <img src="./public/assets/images/img31.png"></img>
               <p>World-Wide Data</p>
               <span></span>
             </Link>
@@ -232,10 +232,10 @@ function App() {
       <SixSection>
         <SixLeft>
             <h4> GET IN TOUCH </h4>
-              <div><img src="./src/assets/images/linkedin.png"></img> <p>Matheus Alves</p></div>
-              <div><img src="./src/assets/images/gmail.png"></img> <p>matheus.alvesbr21@gmail.com</p></div>
-              <div><img src="./src/assets/images/github.png"></img> <p>/mhalvesb</p></div>
-              <div><img src="./src/assets/images/instagram.png"></img> <p>matheus.alvesbr21</p></div>
+              <div><img src="./public/assets/images/linkedin.png"></img> <p>Matheus Alves</p></div>
+              <div><img src="./public/assets/images/gmail.png"></img> <p>matheus.alvesbr21@gmail.com</p></div>
+              <div><img src="./public/assets/images/github.png"></img> <p>/mhalvesb</p></div>
+              <div><img src="./public/assets/images/instagram.png"></img> <p>matheus.alvesbr21</p></div>
         </SixLeft>
 
         <SixRight>
