@@ -158,71 +158,23 @@ function App() {
 
         <SkillsDiv>
           <div>
+            <img src="/assets/devicons/browser.png"></img>
             <p>HTML/CSS</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-            </ul>
-            <span>100%</span>
           </div>
 
           <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
             <p>JAVASCRIPT</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-            </ul>
-            <span>80%</span>
           </div>
 
           <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
             <p>REACT</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-            </ul>
-            <span>80%</span>
           </div>
 
           <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
             <p>TYPESCRIPT</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-            </ul>
-            <span>50%</span>
           </div>
 
         </SkillsDiv>
@@ -238,73 +190,26 @@ function App() {
           <OtherSkills>
           <h4>Back-End</h4>
           <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
             <p>NODE</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-            </ul>
-            <span>80%</span>
           </div>
 
           <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"></img>
             <p>MYSQL</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-            </ul>
-            <span>70%</span>
+            
           </div>
         </OtherSkills>
         <OtherSkills>
         <h4>Additional</h4>
           <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
             <p>GIT/GITHUB</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-            </ul>
-            <span>100%</span>
           </div>
 
           <div>
+            <img src="/assets/devicons/ui-ux.png"></img>
             <p>UI/UX</p>
-            <ul>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <ActiveLi></ActiveLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-              <GrayLi></GrayLi>
-            </ul>
-            <span>60%</span>
           </div>
           </OtherSkills>
 

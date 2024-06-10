@@ -614,8 +614,11 @@ export const SkillsDiv = styled.div`
         justify-content: center;
     }
 
+    img{
+        width: 150px;
+    }
     
-
+    
     span{
         display: block;
         color: #fff;
@@ -631,6 +634,9 @@ export const SkillsDiv = styled.div`
         width: 200px;
         height: 200px;
         }
+        img{
+        width: 100px;
+    }
     }
 
     @media(max-width: 1024px){
@@ -741,8 +747,6 @@ export const OtherSkills = styled.div`
         justify-content: center;
     }
 
-    
-
     span{
         display: block;
         color: #fff;
@@ -752,12 +756,18 @@ export const OtherSkills = styled.div`
         align-self: flex-end;
         color: #fff;
     }
+    img{
+        width: 150px;
+    }
 
     @media(max-width: 1500px){
         div{
             width: 200px;
         height: 200px;
         }
+        img{
+        width: 100px;
+    }
     }
 
     @media(max-width: 1024px){
@@ -779,6 +789,9 @@ export const OtherSkills = styled.div`
         span{
             margin-right: 8px;
         }
+        img{
+        width: 100px;
+    }
     }
 
     @media(max-width: 768px){
