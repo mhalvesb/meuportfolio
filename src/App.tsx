@@ -232,8 +232,8 @@ function App() {
       <SixSection>
         <SixLeft>
             <h4> GET IN TOUCH </h4>
-              <div><img src="./public/assets/images/linkedin.png"></img> <p>Matheus Alves</p></div>
-              <div><img src="./public/assets/images/gmail.png"></img> <p>matheus.alvesbr21@gmail.com</p></div>
+              <div><img src="/assets/images/linkedin.png"></img> <p>Matheus Alves</p></div>
+              <div><img src="/assets/images/gmail.png"></img> <p>matheus.alvesbr21@gmail.com</p></div>
               <div><img src="./public/assets/images/github.png"></img> <p>/mhalvesb</p></div>
               <div><img src="./public/assets/images/instagram.png"></img> <p>matheus.alvesbr21</p></div>
         </SixLeft>
