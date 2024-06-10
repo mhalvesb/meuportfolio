@@ -5,7 +5,7 @@ import {motion, useInView, useAnimation} from "framer-motion";
 
 import {Link } from 'react-router-dom';
 import {ComplementalSection, ContactButton, FirstSection, FiveSection, Footers, FourthSection, FullStack, MessageInput, MyName, NameAndEmailInputs, OtherSkills, Profession, SecondSection, SixLeft, SixRight, SixSection, SkillsDiv, ThirdSection, TwoSkills, TwoSkillsText, WebDev } from './index.styled'
-
+import { SiExpress, SiPassport } from "react-icons/si";
 
 
 
@@ -200,18 +200,41 @@ function App() {
             
           </div>
         </OtherSkills>
-        <OtherSkills>
+        
+        <SkillsDiv>
         <h4>Additional</h4>
+          <div>
+            <SiExpress/>
+            <p>EXPRESS JS</p>
+          </div>
+          <div>
+          <SiPassport />
+            <p>PASSPORT</p>
+          </div>
+
+          <div>
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png"></img>
+            <p>GEMINI AI</p>
+          </div>
+
           <div>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
             <p>GIT/GITHUB</p>
           </div>
 
           <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+            <p>VITE</p>
+          </div>
+          <div>
             <img src="/assets/devicons/ui-ux.png"></img>
             <p>UI/UX</p>
           </div>
-          </OtherSkills>
+          <div>
+            <img src="/assets/devicons/api.png"></img>
+            <p>RESTFUL API</p>
+          </div>
+        </SkillsDiv>
 
 
         </TwoSkills>

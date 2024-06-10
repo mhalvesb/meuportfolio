@@ -573,7 +573,7 @@ export const SkillsDiv = styled.div`
     flex-direction: row;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     p{
         color: #5CE6BB;
@@ -591,6 +591,7 @@ export const SkillsDiv = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 15px 15px;
     }
 
     h4{
@@ -616,6 +617,11 @@ export const SkillsDiv = styled.div`
 
     img{
         width: 150px;
+    }
+    svg{
+        width: 150px;
+        height: 150px;
+        color: #fff;
     }
     
     
