@@ -1,7 +1,7 @@
 import './App.css'
 
 
-import { BrowserRouter, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import { ActiveLi, ComplementalSection, ContactButton, FirstSection, FirstSectionImg, FiveSection, Footers, FourthSection, FullStack, GrayLi, MessageInput, MyName, NameAndEmailInputs, OtherSkills, Profession, SecondSection, SixLeft, SixRight, SixSection, SkillsDiv, ThirdSection, TwoSkills, TwoSkillsText, WebDev } from './index.styled'
 
 function App() {
