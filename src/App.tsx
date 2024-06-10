@@ -4,7 +4,7 @@ import {useEffect, useRef} from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
 
 import {Link } from 'react-router-dom';
-import { ActiveLi, ComplementalSection, ContactButton, FirstSection, FirstSectionImg, FiveSection, Footers, FourthSection, FullStack, GrayLi, MessageInput, MyName, NameAndEmailInputs, OtherSkills, Profession, SecondSection, SixLeft, SixRight, SixSection, SkillsDiv, ThirdSection, TwoSkills, TwoSkillsText, WebDev } from './index.styled'
+import { ActiveLi, ComplementalSection, ContactButton, FirstSection, FiveSection, Footers, FourthSection, FullStack, GrayLi, MessageInput, MyName, NameAndEmailInputs, OtherSkills, Profession, SecondSection, SixLeft, SixRight, SixSection, SkillsDiv, ThirdSection, TwoSkills, TwoSkillsText, WebDev } from './index.styled'
 
 
 
