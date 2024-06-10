@@ -823,14 +823,7 @@ export const OtherSkills = styled.div`
 `;
 
 
-export const ActiveLi = styled.li`
-        
-        background-color: #5CE6BB;
-`;
 
-export const GrayLi = styled.li`
-        background-color: #fff;
-`;
 
 
 export const TwoSkills = styled.div`
