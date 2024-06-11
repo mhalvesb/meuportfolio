@@ -36,7 +36,9 @@ function App() {
         e.preventDefault();
         if(form.current !== null){
           emailjs.sendForm("service_n9uuwh7", "template_2ur265p", form.current, "DI5JwdjRlOrkBjNmR").then((result) =>{
-            
+            setName("");
+            setEmail("");
+            setMessages("");
           });
         }
     }
@@ -77,9 +79,7 @@ function App() {
       }
     }, [secondSecView, thirdSecView, fourSecView, fiveSecView, complementalView]);
 
-    useEffect(() =>{
-      
-    }, [nameMessage, emailMessage, messages])
+    
   return (
     <>
       <FirstSection>
@@ -278,11 +278,11 @@ function App() {
         <SixRight ref={form} onSubmit={sendEmail}>
             <h4>DROP ME A MESSAGE</h4>
             <NameAndEmailInputs>
-              <input type="text" name="user_name" id="user" onChange={handleChangeName} placeholder="NAME"></input>
-              <input type="text" name="user_email" id="email" onChange={handleChangeEmail} placeholder="EMAIL"></input>
+              <input type="text" name="user_name" id="user" value={nameMessage} onChange={handleChangeName} placeholder="NAME"></input>
+              <input type="text" name="user_email" id="email" value={emailMessage} onChange={handleChangeEmail} placeholder="EMAIL"></input>
             </NameAndEmailInputs>
             <MessageInput>
-              <textarea name="message" id="message" onChange={handleChangeMessage} placeholder="TYPE MESSAGE"></textarea>
+              <textarea name="message" id="message" value={messages} onChange={handleChangeMessage} placeholder="TYPE MESSAGE"></textarea>
             </MessageInput>
             <button type="submit">Send</button>
         </SixRight>
