@@ -149,13 +149,13 @@ function App() {
               <p>Starbucks Landing Page</p>
               <span></span>
             </Link>
-            <Link to="/">
+            <Link to="https://www.kenosisengenharia.com.br">
             
               <img src="/assets/images/kenosis.png"></img>
               <p>Civil Construction Page</p>
               <span></span>
             </Link>
-            <Link to="/">
+            <Link to="https://datas-front.vercel.app/">
 
               <img src="/assets/images/socialMedia1.png"></img>
               <p>Functional Social Media</p>
