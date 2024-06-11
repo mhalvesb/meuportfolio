@@ -42,6 +42,41 @@ function App() {
           });
         }
     }
+
+    const toContact = () =>{
+        
+        if(document.querySelector("#ContactArea") !== null){
+          const duration =  1500;
+          let target: number = (document.querySelector("#ContactArea") as HTMLElement).offsetTop;
+          let startPosition: number = window.scrollY;
+          let distance =  target - startPosition;
+          let startTime:number | null = null;
+
+          const scrolling = (currentTime: number) =>{
+            if(!startTime) startTime = currentTime;
+            let timeElapsed = currentTime - startTime;
+            console.log(startPosition);
+            let scrollPos: number = linear(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(startPosition, scrollPos);
+            if(timeElapsed < duration){
+              requestAnimationFrame(scrolling);
+            }
+          
+          }
+          
+          function linear(t: number, b: number, c: number, d: number)  {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          }
+          requestAnimationFrame(scrolling);
+        }
+        
+        
+        
+    }
+
     const secondRef = useRef(null);
     const thirdRef = useRef(null);
     const fourRef = useRef(null);
@@ -88,7 +123,7 @@ function App() {
           <WebDev>Web Developer</WebDev> <span>/</span> <FullStack>FullStack</FullStack>
         </Profession>
         <MyName>Matheus Alves</MyName>
-        <ContactButton>
+        <ContactButton onClick={toContact}>
           <p>Contact Me</p>
         </ContactButton>
         
@@ -275,7 +310,7 @@ function App() {
               <Link to="https://www.instagram.com/matheusalvesbr1/"><div><img src="/assets/images/instagram.png"></img> <p>matheusalvesbr21</p></div></Link>
         </SixLeft>
 
-        <SixRight ref={form} onSubmit={sendEmail}>
+        <SixRight ref={form} onSubmit={sendEmail} id="ContactArea">
             <h4>DROP ME A MESSAGE</h4>
             <NameAndEmailInputs>
               <input type="text" name="user_name" id="user" value={nameMessage} onChange={handleChangeName} placeholder="NAME"></input>
