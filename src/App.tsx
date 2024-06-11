@@ -35,7 +35,7 @@ function App() {
     const sendEmail = (e: React.FormEvent) =>{
         e.preventDefault();
         if(form.current !== null){
-          emailjs.sendForm("service_n9uuwh7", "template_2ur265p", form.current, "DI5JwdjRlOrkBjNmR").then((result) =>{
+          emailjs.sendForm("service_n9uuwh7", "template_2ur265p", form.current, "DI5JwdjRlOrkBjNmR").then(() =>{
             setName("");
             setEmail("");
             setMessages("");
@@ -269,10 +269,10 @@ function App() {
       <SixSection>
         <SixLeft>
             <h4> GET IN TOUCH </h4>
-              <div><img src="/assets/images/linkedin.png"></img> <p>Matheus Alves</p></div>
-              <div><img src="/assets/images/gmail.png"></img> <p>matheus.alvesbr21@gmail.com</p></div>
-              <div><img src="/assets/images/github.png"></img> <p>/mhalvesb</p></div>
-              <div><img src="/assets/images/instagram.png"></img> <p>matheus.alvesbr21</p></div>
+              <Link to="https://www.linkedin.com/in/matheus-alves-br/"><div><img src="/assets/images/linkedin.png"></img> <p>Matheus Alves</p></div></Link>
+              <Link to="https://www,mailto:matheus.alvesbr21@gmail.com/"><div><img src="/assets/images/gmail.png"></img> <p>matheus.alvesbr21@gmail.com</p></div></Link>
+              <Link to="https://github.com/mhalvesb"><div><img src="/assets/images/github.png"></img> <p>/mhalvesb</p></div></Link>
+              <Link to="https://www.instagram.com/matheusalvesbr1/"><div><img src="/assets/images/instagram.png"></img> <p>matheusalvesbr21</p></div></Link>
         </SixLeft>
 
         <SixRight ref={form} onSubmit={sendEmail}>

@@ -869,6 +869,10 @@ export const SixLeft = styled.div`
     display: flex;
         flex-direction: column;
         flex: 1;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
     h4{
         font-size: 45px;
         margin:0;
