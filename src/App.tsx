@@ -1,6 +1,6 @@
 import './App.css'
-import {useEffect, useRef} from "react";
-
+import React, {useEffect, useRef, useState} from "react";
+import emailjs from "@emailjs/browser";
 import {motion, useInView, useAnimation} from "framer-motion";
 
 import {Link } from 'react-router-dom';
@@ -15,8 +15,31 @@ import { SiExpress, SiPassport } from "react-icons/si";
 
 
 function App() {
-  
+  const [nameMessage, setName] = useState<string>("");
+  const [emailMessage, setEmail] = useState<string>("");
+  const [messages, setMessages] = useState<string>("");
 
+
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) =>{
+    setName(e.target.value);
+  }
+  const handleChangeEmail = (e:  React.ChangeEvent<HTMLInputElement>) =>{
+    setEmail(e.target.value);
+  }
+  const handleChangeMessage = (e:  React.ChangeEvent<HTMLTextAreaElement>) =>{
+    setMessages(e.target.value);
+  }
+    const sendEmail = (e: React.FormEvent) =>{
+        e.preventDefault();
+        if(form.current !== null){
+          emailjs.sendForm("service_n9uuwh7", "template_2ur265p", form.current, "DI5JwdjRlOrkBjNmR").then((result) =>{
+            
+          });
+        }
+    }
     const secondRef = useRef(null);
     const thirdRef = useRef(null);
     const fourRef = useRef(null);
@@ -54,7 +77,9 @@ function App() {
       }
     }, [secondSecView, thirdSecView, fourSecView, fiveSecView, complementalView]);
 
-
+    useEffect(() =>{
+      
+    }, [nameMessage, emailMessage, messages])
   return (
     <>
       <FirstSection>
@@ -118,7 +143,7 @@ function App() {
 <h6>See more</h6>
 
           <div>
-            <Link to="https://www.starbucks.com">
+            <Link to="https://mhalvesb.github.io/projetostarbucks/">
               
               <img src="/assets/images/starbucks.png"></img>
               <p>Starbucks Landing Page</p>
@@ -250,16 +275,16 @@ function App() {
               <div><img src="/assets/images/instagram.png"></img> <p>matheus.alvesbr21</p></div>
         </SixLeft>
 
-        <SixRight>
+        <SixRight ref={form} onSubmit={sendEmail}>
             <h4>DROP ME A MESSAGE</h4>
             <NameAndEmailInputs>
-              <input type="text" placeholder="NAME"></input>
-              <input type="text" placeholder="EMAIL"></input>
+              <input type="text" name="user_name" id="user" onChange={handleChangeName} placeholder="NAME"></input>
+              <input type="text" name="user_email" id="email" onChange={handleChangeEmail} placeholder="EMAIL"></input>
             </NameAndEmailInputs>
             <MessageInput>
-              <textarea placeholder="TYPE MESSAGE"></textarea>
+              <textarea name="message" id="message" onChange={handleChangeMessage} placeholder="TYPE MESSAGE"></textarea>
             </MessageInput>
-            <button>Send</button>
+            <button type="submit">Send</button>
         </SixRight>
       </SixSection>
 

@@ -917,7 +917,7 @@ export const SixLeft = styled.div`
     
 `;
 
-export const SixRight = styled.div`
+export const SixRight = styled.form`
     display: flex;
     flex-direction: column;
     flex: 1;
